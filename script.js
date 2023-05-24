@@ -13,10 +13,12 @@ const alertButton = $_(".alert-button"),
 
         const input = $_("." + splittedClass[0] + "-input");
         
-        await alerts({
+        functionName !== "alerts" ? await alerts({
             modalMessage: await window[functionName]({
                 modalMessage: input.value
             })
+        }) : await window[functionName]({
+            modalMessage: input.value
         });
     });
 });
