@@ -126,9 +126,3 @@
 	border-color: blue;
 	border-width: 2px;
 }
-
-
-#fiveserver-info {
-	transform: rotateY(180deg);
-	user-select: none;
-}
