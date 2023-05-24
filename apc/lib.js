@@ -70,10 +70,9 @@ function prompts({ modalMessage = "Введите текст:",
 			remove();
 		});
 
-		modalInput.addEventListener("keydown", (event) => {
+		modalInput.addEventListener("keyup", (event) => {
 			if (event.key === "Enter") {
-				resolve(modalInput.value);
-				remove();
+				modalSubmitBtn.click();
 			}
 
 			if (event.key === "Escape") {
