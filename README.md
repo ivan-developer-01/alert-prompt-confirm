@@ -15,6 +15,6 @@
 })();
 ```
 
-Попробовать онлайн можно тут: [github.com/ivan-developer-01/alert-prompt-confirm](https://github.com/ivan-developer-01/alert-prompt-confirm/).
+Попробовать онлайн можно тут: [ivan-developer-01.github.io/alert-prompt-confirm](https://ivan-developer-01.github.io/alert-prompt-confirm/).
 
 **Замечание: Основной код находится в папке `apc`. Файлы `index.html`, `script.js` используются для веб-страницы проекта.**
