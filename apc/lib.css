@@ -1,0 +1,134 @@
+.modal-outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-outer,
+.modal-bg {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.modal-bg {
+	background: rgba(43, 43, 43, 0.9);
+	opacity: 1;
+	z-index: 1;
+}
+
+.modal-outer .modal {
+	position: relative;
+	z-index: 2;
+	width: 20vw;
+	height: 10vw;
+	background: #d4d4d4;
+	padding: 2vw;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	overflow: auto;
+}
+
+.modal-outer .modal-alert,
+.modal-outer .modal-confirm {
+	height: 8vw;
+}
+
+.modal-outer .modal-close-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	bottom: 20px;
+	float: right;
+	/* left: 364px; */
+	width: 30px;
+	height: 30px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background: #fcfcfc;
+	cursor: pointer;
+	user-select: none;
+}
+
+.modal-outer .modal-close-button:hover {
+	background: #dadada;
+}
+
+.modal-outer .modal-close-button:active {
+	background: #FF5555;
+}
+
+/* .modal-outer .modal .modal-message {
+	overflow: scroll;
+} */
+
+.modal-outer .modal .modal-btn-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 2vw;
+}
+
+.modal-outer .modal .modal-btn {
+	/* position: fixed; */
+	/* top: 18.2vw; */
+	/* right: 38.8vw; */
+	direction: rtl;
+	width: 8.8vw;
+	height: 2.6vw;
+	appearance: none;
+	border: 1px solid gray;
+	border-radius: 10px;
+	font-size: 15px;
+	overflow: hidden;
+}
+
+.modal-outer .modal .modal-btn:hover {
+	background: rgb(216, 216, 216);
+}
+
+.modal-outer .modal .modal-btn:active {
+	background: rgb(200, 200, 200);
+}
+
+.modal-outer .modal.modal-alert .modal-btn {
+	width: 100%;
+}
+
+.modal-outer .modal .modal-cancel-btn {
+	border: 1px solid rgb(200, 0, 0);
+}
+
+.modal-outer .modal .modal-submit-btn {
+	border: 1px solid green;
+}
+
+.modal-outer .modal .modal-input {
+	width: 92%;
+	margin: 0.2vw;
+	appearance: none;
+	border: 2px solid;
+	border-color: gray;
+	border-radius: 10px;
+	height: 1vw;
+	padding: 0.5vw;
+	transition: border-color 30ms;
+}
+
+.modal-outer .modal .modal-input:focus,
+.modal-outer .modal .modal-input:active {
+	transition: border-color 30ms;
+	border-color: blue;
+	border-width: 2px;
+}
+
+
+#fiveserver-info {
+	transform: rotateY(180deg);
+	user-select: none;
+}
